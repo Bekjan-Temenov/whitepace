@@ -8,7 +8,7 @@ const FavoriteApps = () => {
     <div className="relative overflow-hidden py-[100px]  border">
       <div className=" w-screen">
         <img
-          src="/img/Element2.png"
+          src="/whitepace/img/Element2.png"
           className="absolute top-[50%] left-[-400px] md:left-0 translate-y-[-50%]    h-[50%] md:h-[60%] min-w-[1000px] md:w-screen  md:rotate-0 rotate-60    z-0"
           alt="img"
         />
@@ -16,7 +16,7 @@ const FavoriteApps = () => {
       <Container>
         <section className="relative  w-full py-[20px] sm:py-[40px] md:py-[100px] gap-[100px] md:gap-5  flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/2 z-50 ">
-            <img src="/img/Apps.png" alt="" />
+            <img src="/whitepace/img/Apps.png" alt="" />
         </div>
           <div className="md:w-1/2 z-50 flex flex-col items-center justify-center md:items-start mb-8 md:mb-0">
             <h1 className="md:text-6xl text-center md:text-start text-[36px]   text-white justify-end flex items-end font-bold leading-tight mb-4">

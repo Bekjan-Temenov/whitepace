@@ -15,7 +15,7 @@ const Customize = () => {
               <span className="relative">
                 <img
                   className="absolute z-0 bottom-[-8px]"
-                  src="/img/Vector.png"
+                  src="/whitepace/img/Vector.png"
                   alt=""
                 />
                 <p className="relative z-50 ">your needs</p>

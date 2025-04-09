@@ -13,7 +13,7 @@ const Extenstion = () => {
             <span className="relative">
               <img
                 className="absolute z-0 bottom-[0px]"
-                src="/img/Vector.png"
+                src="/whitepace/img/Vector.png"
                 alt=""
               />
               <p className="relative z-50">Extension</p>

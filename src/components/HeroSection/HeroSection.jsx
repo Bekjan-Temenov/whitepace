@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div className="relative overflow-hidden py-[80px] md:py-[100px]   ">
       <div className="">
         <img
-          src="/img/curve.png"
+          src="/whitepace/img/curve.png"
           className="absolute top-[50%] left-[-400px] md:left-0 translate-y-[-50%]    h-[70%] md:h-[60%] min-w-[1000px] md:w-screen  md:rotate-0 rotate-70  z-0"
           alt="img"
         />

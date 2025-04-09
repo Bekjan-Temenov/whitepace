@@ -11,7 +11,7 @@ const TestimonialCard = ({ quote, name, title, avatar, highlighted }) => {
         <img
           style={{ fontSize: '40px' }}
           className={highlighted ? 'text-white' : 'text-white'}
-          src="/svg/QuoteIcon.svg"
+          src="/whitepace/svg/QuoteIcon.svg"
           alt="Quote Icon"
         />
       </div>

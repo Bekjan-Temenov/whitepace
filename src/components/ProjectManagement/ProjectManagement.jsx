@@ -8,7 +8,7 @@ const ProjectManagement = () => {
     <div className="relative  bg-white">
       <div className="">
         <img
-          src="/img/BACKGROUND.png"
+          src="/whitepace/img/BACKGROUND.png"
           className="absolute top-[30%] right-[180px] md:top-[50%] md:left-[-15%] translate-y-[-50%] h-auto w-auto  z-0"
           alt="img"
         />
@@ -21,7 +21,7 @@ const ProjectManagement = () => {
               <span className="relative">
                 <img
                   className="absolute z-0 md:h-auto h-[40px] bottom-[-19px]"
-                  src="/img/Vector.png"
+                  src="/whitepace/img/Vector.png"
                   alt=""
                 />
                 <p className="relative z-50">Management</p>

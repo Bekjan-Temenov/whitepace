@@ -9,7 +9,7 @@ const Worktogether = () => {
       <Container>
         <section className="relative py-[80px]  w-full md:py-[100px]   flex flex-col md:flex-row items-center justify-center gap-2 lg:gap-[50px]">
           <div className="md:w-1/2 z-50  hidden md:block ">
-            <img src="/img/Work Together Image.png" alt="" />
+            <img src="/whitepace/img/Work Together Image.png" alt="" />
           </div>
           <div className="md:w-1/2 z-50  mx-auto flex flex-col items-center md:items-start   mb-8 md:mb-0">
             <h1 className="md:text-6xl text-[36px]    flex items-center text-[#212529] justify-center  font-bold leading-tight mb-4">
@@ -17,7 +17,7 @@ const Worktogether = () => {
               <span className="relative">
                 <img
                   className="absolute z-0 bottom-[-8px]"
-                  src="/img/Vector.png"
+                  src="/whitepace/img/Vector.png"
                   alt=""
                 />
                 <p className="relative z-50">Together</p>
@@ -44,7 +44,7 @@ const Worktogether = () => {
             </Button>
           </div>
           <div className="md:w-1/2 z-50  block md:hidden ">
-            <img src="/img/Work Together Image.png" alt="" />
+            <img src="/whitepace/img/Work Together Image.png" alt="" />
           </div>
         </section>
       </Container>

@@ -24,10 +24,10 @@ const PricingCard = ({ title, price, description, features, highlighted }) => {
             {
               highlighted ? 
               <img className={`mr-2 `}
-                style={{ fontSize: '20px' }} src="/svg/check.svg" alt="" />
+                style={{ fontSize: '20px' }} src="/whitepace/svg/check.svg" alt="" />
                 :
                 <img className={`mr-2 `}
-              style={{ fontSize: '20px' }} src="/svg/checkbox.svg" alt="" />
+              style={{ fontSize: '20px' }} src="/whitepace/svg/checkbox.svg" alt="" />
             }
             
             <span className="text-sm">{feature}</span>

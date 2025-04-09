@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 items-center justify-center  md:grid-cols-5 gap-8 mb-12">
           <div className="flex  flex-col items-center  sm:items-start">
             <div className="flex items-center  mb-4">
-              <img src="/svg/logo.svg" alt="Whitepace Icon" className=" mr-2" />
+              <img src="/whitepace/svg/logo.svg" alt="Whitepace Icon" className=" mr-2" />
             </div>
             <p className="text-sm text-center sm:text-start  text-gray-300">
               whitepace was created for the new ways we live and work. We make a
@@ -82,7 +82,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Company */}
           <div className="flex  flex-col items-center  sm:items-start">
             <h4 className="text-lg font-bold mb-4">Company</h4>
             <ul className="space-y-3 text-center sm:text-start ">
@@ -113,7 +112,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 5: Try It Today */}
           <div className=" flex items-center justify-center flex-col  sm:items-start">
             <h4 className="text-lg font-bold mb-4">Try It Today</h4>
             <p className="text-sm text-center sm:text-start  text-gray-300 mb-4">
@@ -165,21 +163,21 @@ const Footer = () => {
             <a href="#" aria-label="Facebook">
               <img
                 className="text-gray-300 hover:text-white"
-                src="/svg/facebook.svg"
+                src="/whitepace/svg/facebook.svg"
                 alt=""
               />
             </a>
             <a href="#" aria-label="Twitter">
               <img
                 className="text-gray-300 hover:text-white"
-                src="/svg/twitter.svg"
+                src="/whitepace/svg/twitter.svg"
                 alt=""
               />
             </a>
             <a href="#" aria-label="LinkedIn">
               <img
                 className="text-gray-300 hover:text-white"
-                src="/svg/kinkedin.svg"
+                src="/whitepace/svg/kinkedin.svg"
                 alt=""
               />
             </a>

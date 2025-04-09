@@ -81,7 +81,7 @@ const TestimonialSection = () => {
           <h2 className=" text-[49px] md:text-[70px] relative z-50 flex items-center justify-center font-bold text-gray-900 mb-12 text-center">
             <img
               className="absolute bottom-[0px] right-[100px] md:right-[350px] z-0"
-              src="/img/Group.png"
+              src="/whitepace/img/Group.png"
               alt="Underline decoration"
             />
             <span className="z-50">What Our Clients Says</span>

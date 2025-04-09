@@ -27,9 +27,9 @@ const Whitepace = () => {
       </Button>
       <span className="font-[400] text-[18px] md:text-[24px] sm:text-center text-start">On a big team? Contact sales</span>
       <div className="flex items-center gap-[40px] justify-center">
-        <img className="w-[35px] h-[35px] md:w-auto md:h-auto" src="/svg/apple1.svg" alt="apple" />
-        <img className="w-[35px] h-[35px] md:w-auto md:h-auto" src="/svg/windows1.svg" alt="windows" />
-        <img className="w-[35px] h-[35px] md:w-auto md:h-auto" src="/svg/android1.svg" alt="android" />
+        <img className="w-[35px] h-[35px] md:w-auto md:h-auto" src="/whitepace/svg/apple1.svg" alt="apple" />
+        <img className="w-[35px] h-[35px] md:w-auto md:h-auto" src="/whitepace/svg/windows1.svg" alt="windows" />
+        <img className="w-[35px] h-[35px] md:w-auto md:h-auto" src="/whitepace/svg/android1.svg" alt="android" />
       </div>
     </div>
   );

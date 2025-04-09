@@ -72,7 +72,7 @@ const PricingSection = () => {
         <span className="relative z-50">Choose Your Plan</span>
         <img
           className="absolute z-0 bottom-[-8px] md:right-[350px] w-[106px] h-[30px]"
-          src="/img/Vector.png"
+          src="/whitepace/img/Vector.png"
           alt=""
         />
       </h1>

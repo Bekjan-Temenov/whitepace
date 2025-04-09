@@ -8,7 +8,7 @@ const Work = () => {
     <div className="bg-[#043873] relative flex items-center justify-center py-[100px]">
       <div className="hidden md:block">
         <img
-          src="/img/BACKGROUND.png"
+          src="/whitepace/img/BACKGROUND.png"
           className="absolute top-[50%] left-[-15%] translate-y-[-50%] h-auto w-auto  z-0"
           alt="img"
         />
@@ -19,7 +19,7 @@ const Work = () => {
             <span className="z-50 relative">Your work, every where you are</span>
               <img
                 className="absolute z-0 md:bottom-[11px] bottom-[-0px] right-0"
-                src="/svg/bground.svg"
+                src="/whitepace/svg/bground.svg"
                 alt=""
               />
           </span>
