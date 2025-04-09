@@ -29,7 +29,7 @@ const Header = () => {
         
         <div className="flex items-center">
           <Link to="/">
-            <img src="/svg/logo.svg" alt="Whitepace Logo" className="h-8 mr-2" />
+            <img src="/whitepace/svg/logo.svg" alt="Whitepace Logo" className="h-8 mr-2" />
           </Link>
         </div>
         {!isMobile && (

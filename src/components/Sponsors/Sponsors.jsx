@@ -10,7 +10,7 @@ const Sponsors = () => {
   return (
     <div className="bg-white flex flex-col  py-[100px]">
       <Container>
-        <h1 className="sm:text-6xl text-[36px]   flex mb-[100px]  text-[#212529] justify-center  font-bold leading-tight ">
+        <h1 className="sm:text-6xl text-[36px] gap-5  flex mb-[100px]  text-[#212529] justify-center  font-bold leading-tight ">
           <span>Our</span>
           <span className="relative">
             <img
