@@ -9,21 +9,21 @@ const Work = () => {
       <div className="hidden md:block">
         <img
           src="/whitepace/img/BACKGROUND.png"
-          className="absolute top-[50%] left-[-15%] translate-y-[-50%] h-auto w-auto  z-0"
+          className="absolute top-[30%] w-[245px] xl:w-auto lg:left-[-5%] lg:top-[30%] xl:left-[-15%] xl:top-[50%] right-[180px] md:top-[50%] md:left-[-15%] 2xl:left-[-0%] 2xl:top-[60%] translate-y-[-50%] h-auto   z-0"
           alt="img"
         />
       </div>
       <Container>
-        <div className="flex flex-col text-white md:w-[80%] mx-auto items-center gap-[24px] justify-center">
-          <span className="font-[700] relative  gap-3 text-[39px] md:text-[72px]">
-            <span className="z-50 relative">Your work, every where you are</span>
+        <div className="flex flex-col text-white md-w-full lg:w-[49%] xl:w-[80%] xl:mx-auto items-start xl:items-center gap-[24px] justify-center">
+          <span className="font-[700] relative  gap-3 xl:text-center text-start text-[39px] md:text-[54px] lg:text-[64px] xl:text-[65px] 2xl:text-[72px]">
+            <span className="relative z-50">Your work, every where you are</span>
               <img
-                className="absolute z-0 md:bottom-[11px] bottom-[-0px] right-0"
+                className="absolute z-0 lg:bottom-[11px] bottom-[-0px] lg:right-0 md:right-[440px] md:bottom-[-20px] md:w-[235px] md:h-[45px] lg:h-auto    right-0"
                 src="/whitepace/svg/bground.svg"
                 alt=""
               />
           </span>
-          <p className="font-[400] text-start text-[18px]">
+          <p className="font-[400] text-start md:text-center text-[18px]">
             Access your notes from your computer, phone or tablet by
             synchronising with various services, including whitepace, Dropbox
             and OneDrive. The app is available on Windows, macOS, Linux, Android

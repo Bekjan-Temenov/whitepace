@@ -6,8 +6,8 @@ import Container from "../shared/container/Container";
 const Extenstion = () => {
   return (
     <Container>
-      <section className="relative w-full py-[80px] md:py-[100px]   flex flex-col md:flex-row items-center justify-center gap-[50px]">
-        <div className="md:w-1/2 z-50 flex flex-col items-center md:flex-start   mb-8 md:mb-0">
+      <section className="relative w-full py-[80px] lg:py-[100px]   flex flex-col lg:flex-row items-center justify-center gap-[50px]">
+        <div className="z-50 flex flex-col items-center mb-8 lg:w-1/2 lg:flex-start lg:mb-0">
           <h1 className="md:text-6xl text-[36px]    gap-3    text-white justify-start flex items-center font-bold leading-tight mb-4">
             Use as {" "}
             <span className="relative">
@@ -38,7 +38,7 @@ const Extenstion = () => {
           </Button>
         </div>
 
-        <div className="md:w-1/2 z-50 w-[288px]  h-[214px] md:h-[400px] bg-[#C4DEFD] "></div>
+        <div className="lg:w-1/2 w-[288px] md:w-[561px] z-50  h-[214px] md:h-[349px] lg:h-[400px] bg-[#C4DEFD]  "></div>
       </section>
     </Container>
   );

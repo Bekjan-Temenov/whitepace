@@ -21,9 +21,9 @@ const Sponsors = () => {
             <p className="relative z-50">Sponsors</p>
           </span>
         </h1>
-        <div className="flex flex-col flex-wrap md:flex-row gap-[100px] items-center justify-between">
+        <div className="flex flex-col w-full  lg:flex-row lg:gap-[30px] gap-[100px] justify-between ">
           {icons.map((icon ,index) => (
-            <img key={index} src={icon} alt="" />
+            <img className="h-[68px]"  key={index} src={icon} alt="" />
           ))}
         </div>
       </Container>

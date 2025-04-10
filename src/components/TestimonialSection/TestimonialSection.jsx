@@ -12,13 +12,14 @@ const avatar3 =
   "https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 const TestimonialSection = () => {
-  const [activeSlide, setActiveSlide] = useState(1); 
+  const [activeSlide, setActiveSlide] = useState(1);
   const totalSlides = 3;
 
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery("(max-width: 767px)");
+  const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1023px)");
 
   const getLeftmostSlide = (centerSlide) => {
-    let leftmost = centerSlide + 0;
+    let leftmost = centerSlide;
     if (leftmost < 0) {
       leftmost = totalSlides - 1;
     }
@@ -59,11 +60,19 @@ const TestimonialSection = () => {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0px",
-    arrows:false,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    beforeChange: (current, next) => setActiveSlide(next),
+    beforeChange: (next) => setActiveSlide(next),
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+          centerPadding: "0px",
+        },
+      },
       {
         breakpoint: 768,
         settings: {
@@ -75,34 +84,65 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-12 bg-white ">
+    <section className="py-12 bg-white">
       <Container>
         <div className="mx-auto">
-          <h2 className=" text-[49px] md:text-[70px] relative z-50 flex items-center justify-center font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-[49px] md:text-[52px] lg:text-[70px] relative z-50 flex items-center justify-center font-bold text-gray-900 mb-12 text-center">
             <img
-              className="absolute bottom-[0px] right-[100px] md:right-[350px] z-0"
+              className="absolute bottom-[0px] right-[100px] md:bottom-[60px] lg:bottom-0 md:right-[160px] lg:right-[350px] z-0"
               src="/whitepace/img/Group.png"
               alt="Underline decoration"
             />
-            <span className="z-50">What Our Clients Says</span>
+            <span className="z-50 ">
+              <span className="block md:hidden">What Our Clients Says</span>
+              <span className="hidden md:block lg:hidden">
+                See what our trusted users Say
+              </span>
+              <span className="hidden lg:block">What Our Clients Says</span>
+            </span>
           </h2>
-
-          <Slider {...settings}>
+          <div className=" sm:hidden lg:block">
+            <Slider {...settings}>
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="px-1 lg:px-5">
+                  <TestimonialCard
+                    quote={testimonial.quote}
+                    name={testimonial.name}
+                    title={testimonial.title}
+                    avatar={testimonial.avatar}
+                    highlighted={
+                      isMobile
+                        ? index === activeSlide
+                        : isTablet
+                        ? index === activeSlide
+                        : index === leftmostSlide
+                    }
+                    isMobile={isMobile}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+          <div className="hidden overflow-x-auto sm:flex sm:block  lg:hidden gap-[32px] ">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="md:px-5 px-1">
+              <div key={index} className="px-1 lg:px-5">
                 <TestimonialCard
                   quote={testimonial.quote}
                   name={testimonial.name}
                   title={testimonial.title}
                   avatar={testimonial.avatar}
                   highlighted={
-                    isMobile ? index === activeSlide : index === leftmostSlide
+                    isMobile
+                      ? index === activeSlide
+                      : isTablet
+                      ? index === activeSlide
+                      : index === leftmostSlide
                   }
                   isMobile={isMobile}
                 />
               </div>
             ))}
-          </Slider>
+          </div>
         </div>
       </Container>
     </section>

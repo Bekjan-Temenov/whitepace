@@ -5,14 +5,14 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Data = () => {
   return (
-    <div className="relative  bg-white">
+    <div className="relative bg-white">
       <Container>
-        <section className="relative gap-[100px] md:gap-[20px] w-full py-[20px] sm:py-[40px] md:py-[100px]   flex flex-col md:flex-row items-center justify-center">
-          <div className="md:w-1/2 block md:hidden z-50  ">
+        <section className="relative gap-[100px] md:gap-[20px] w-full py-[20px] sm:py-[40px] md:py-[100px]   flex flex-col lg:flex-row items-center justify-center">
+          <div className="z-50 block lg:w-1/2 lg:hidden ">
             <img src="/whitepace/img/Element.png" alt="" />
           </div>
-          <div className="md:w-1/2 z-50    mb-8 md:mb-0">
-            <h1 className="md:text-6xl text-[36px] text-center sm:text-start   flex  text-[#212529] justify-start  font-bold leading-tight mb-4 gap-3">
+          <div className="z-50 mb-8 lg:w-1/2 lg:mb-0">
+            <h1 className="lg:text-6xl text-[36px] text-center sm:text-start   flex  text-[#212529] justify-start  font-bold leading-tight mb-4 gap-3">
               <span>100% </span>
               <span className="relative">
                 <img
@@ -45,7 +45,7 @@ const Data = () => {
             </Button>
           </div>
 
-          <div className="md:w-1/2 hidden md:block z-50  ">
+          <div className="z-50 hidden lg:w-1/2 lg:block ">
             <img src="/whitepace/img/Element.png" alt="" />
           </div>
         </section>

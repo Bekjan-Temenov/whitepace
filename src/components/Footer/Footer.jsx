@@ -7,23 +7,23 @@ import Container from "../../shared/container/Container";
 
 const Footer = () => {
   return (
-    <div className="flex w-full text-white items-center py-[50px] md:py-[100px] flex-col gap-[100px] md:gap-[162px]">
+    <div className="flex w-full text-white items-center py-[50px] lg:py-[100px] flex-col gap-[100px] lg:gap-[162px]">
       <Whitepace />
 
       <Container>
-        <div className="grid grid-cols-1 items-center justify-center  md:grid-cols-5 gap-8 mb-12">
-          <div className="flex  flex-col items-center  sm:items-start">
-            <div className="flex items-center  mb-4">
-              <img src="/whitepace/svg/logo.svg" alt="Whitepace Icon" className=" mr-2" />
+        <div className="grid items-center justify-center grid-cols-1 gap-8 mb-12 lg:grid-cols-5">
+          <div className="flex flex-col items-center sm:items-start">
+            <div className="flex items-center mb-4">
+              <img src="/whitepace/svg/logo.svg" alt="Whitepace Icon" className="mr-2 " />
             </div>
-            <p className="text-sm text-center sm:text-start  text-gray-300">
+            <p className="text-sm text-center text-gray-300 sm:text-start">
               whitepace was created for the new ways we live and work. We make a
               better workspace around the world
             </p>
           </div>
 
-          <div className="flex  flex-col items-center  sm:items-start">
-            <h4 className="text-lg font-bold mb-4 ">Product</h4>
+          <div className="flex flex-col items-center sm:items-start">
+            <h4 className="mb-4 text-lg font-bold ">Product</h4>
             <ul className="space-y-3 text-center sm:text-start ">
               <li>
                 <a
@@ -52,8 +52,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex  flex-col items-center  sm:items-start">
-            <h4 className="text-lg font-bold mb-4">Resources</h4>
+          <div className="flex flex-col items-center sm:items-start">
+            <h4 className="mb-4 text-lg font-bold">Resources</h4>
             <ul className="space-y-3 text-center sm:text-start ">
               <li>
                 <a
@@ -82,8 +82,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex  flex-col items-center  sm:items-start">
-            <h4 className="text-lg font-bold mb-4">Company</h4>
+          <div className="flex flex-col items-center sm:items-start">
+            <h4 className="mb-4 text-lg font-bold">Company</h4>
             <ul className="space-y-3 text-center sm:text-start ">
               <li>
                 <a
@@ -112,9 +112,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=" flex items-center justify-center flex-col  sm:items-start">
-            <h4 className="text-lg font-bold mb-4">Try It Today</h4>
-            <p className="text-sm text-center sm:text-start  text-gray-300 mb-4">
+          <div className="flex flex-col items-center justify-center sm:items-start">
+            <h4 className="mb-4 text-lg font-bold">Try It Today</h4>
+            <p className="mb-4 text-sm text-center text-gray-300 sm:text-start">
               Get started for free. Add your whole team as your needs grow.
             </p>
             <Button
@@ -137,52 +137,37 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col sm:flex-row items-center  w-full space-y-4 md:space-y-0 md:space-x-6 text-sm text-gray-300">
-            <div className="flex items-center">
-              <LanguageIcon className="mr-2" />
-              <select name="" id="">
-                <option value="">English</option>
-                <option value="">Русский</option>
-                <option value="">Кыргызский</option>
-              </select>
-            </div>
-            <a href="#" className="hover:underline hover:text-[#FFE492]">
-              Terms & privacy
-            </a>
-            <a href="#" className="hover:underline hover:text-[#FFE492]">
-              Security
-            </a>
-            <a href="#" className="hover:underline hover:text-[#FFE492]">
-              Status
-            </a>
-            <span className="text-sm text-gray-300">©2021 Whitepace LLC.</span>
-          </div>
+        <div className="flex flex-col items-center justify-between pt-6 border-t border-gray-700 lg:flex-row lg:justify-between">
+  <div className="flex flex-col items-center gap-[20px] justify-between w-full text-sm text-gray-300  sm:flex-row lg:space-y-0 lg:space-x-6">
+    <div className="flex items-center space-x-2">
+      <LanguageIcon className="mr-2" />
+      <select name="" id="" className="text-sm text-gray-300 bg-transparent border-none focus:outline-none">
+        <option value="">English</option>
+        <option value="">Русский</option>
+        <option value="">Кыргызский</option>
+      </select>
+    </div>
+    <div className="flex flex-col md:flex-row gap-[20px]">
+      <a href="#" className="hover:underline hover:text-[#FFE492]">Terms & privacy</a>
+      <a href="#" className="hover:underline hover:text-[#FFE492]">Security</a>
+      <a href="#" className="hover:underline hover:text-[#FFE492]">Status</a>
+    </div>
+    <span className="text-sm text-gray-300">©2021 Whitepace LLC.</span>
+  </div>
 
-          <div className="flex items-center  space-x-4 mt-4 md:mt-0">
-            <a href="#" aria-label="Facebook">
-              <img
-                className="text-gray-300 hover:text-white"
-                src="/whitepace/svg/facebook.svg"
-                alt=""
-              />
-            </a>
-            <a href="#" aria-label="Twitter">
-              <img
-                className="text-gray-300 hover:text-white"
-                src="/whitepace/svg/twitter.svg"
-                alt=""
-              />
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <img
-                className="text-gray-300 hover:text-white"
-                src="/whitepace/svg/kinkedin.svg"
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
+  <div className="flex items-center mt-4 space-x-4 lg:mt-0"> 
+    <a href="#" aria-label="Facebook"> 
+      <img className="text-gray-300 hover:text-white" src="/whitepace/svg/facebook.svg" alt="Facebook" />
+    </a>
+    <a href="#" aria-label="Twitter">
+      <img className="text-gray-300 hover:text-white" src="/whitepace/svg/twitter.svg" alt="Twitter" />
+    </a>
+    <a href="#" aria-label="LinkedIn">
+      <img className="text-gray-300 hover:text-white" src="/whitepace/svg/kinkedin.svg" alt="LinkedIn" />
+    </a>
+  </div>
+</div>
+
       </Container>
     </div>
   );

@@ -4,3 +4,12 @@
 body{
   background-color: #043873;
 }
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}

@@ -6,23 +6,23 @@ import Container from "../../shared/container/Container";
 const FavoriteApps = () => {
   return (
     <div className="relative overflow-hidden py-[100px]  border">
-      <div className=" w-screen">
+      <div className="w-screen ">
         <img
           src="/whitepace/img/Element2.png"
-          className="absolute top-[50%] left-[-400px] md:left-0 translate-y-[-50%]    h-[50%] md:h-[60%] min-w-[1000px] md:w-screen  md:rotate-0 rotate-60    z-0"
+          className="absolute top-[50%] left-[-400px] sm:left-[-200px] md:left-0 translate-y-[-50%]    h-[70%] md:h-[60%] min-w-[1000px] md:w-screen  md:rotate-0 rotate-70 sm:rotate-10  z-0"
           alt="img"
         />
       </div>
       <Container>
-        <section className="relative  w-full py-[20px] sm:py-[40px] md:py-[100px] gap-[100px] md:gap-5  flex flex-col md:flex-row items-center justify-center">
-        <div className="md:w-1/2 z-50 ">
+        <section className="relative  w-full py-[20px] sm:py-[40px] lg:py-[100px] gap-[100px] lg:gap-10  flex flex-col lg:flex-row items-center justify-center">
+        <div className="z-50 lg:w-1/2 ">
             <img src="/whitepace/img/Apps.png" alt="" />
         </div>
-          <div className="md:w-1/2 z-50 flex flex-col items-center justify-center md:items-start mb-8 md:mb-0">
-            <h1 className="md:text-6xl text-center md:text-start text-[36px]   text-white justify-end flex items-end font-bold leading-tight mb-4">
+          <div className="z-50 flex flex-col items-center justify-center mb-8 lg:w-1/2 lg:items-start lg:mb-0">
+            <h1 className="lg:text-6xl text-center lg:text-start text-[36px]   text-white justify-end flex items-end font-bold leading-tight mb-4">
             Work with Your Favorite Apps Using whitepace
             </h1>
-            <p className="text-white font-[400] text-center md:text-start text-[18px] w-full      mb-6 max-w-md">
+            <p className="text-white font-[400] text-center lg:text-start text-[18px] w-full      mb-6 max-w-md">
             Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
             </p>
             <Button
